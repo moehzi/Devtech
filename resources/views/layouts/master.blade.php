@@ -12,5 +12,6 @@
 	@include('layouts.sidebar')
 	@yield('content')
 </div>
+@include('sweetalert::alert')
 </body>
 </html>

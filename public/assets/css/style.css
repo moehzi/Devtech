@@ -182,3 +182,67 @@ td {
     padding: 5px;
     text-align: left;
 }
+
+.login {
+    display: flex;
+    justify-content: center;
+    width: 1366px;
+    height: auto;
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 195px auto;
+    width: 683px;
+}
+
+.form-login h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.form-login input {
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login button.btn-primary {
+    width: 400px;
+}
+
+.text-login {
+    display: flex;
+    flex-direction: column;
+    width: 683px;
+    height: auto;
+    background-color: #024FD1;
+    color: #ffffff;
+    justify-content: center;
+}
+
+.text-login h1 {
+    width: 452px;
+    font-size: 64px;
+    font-weight: 600;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.text-login p {
+    width: 452px;
+    line-height: 150%;
+    font-size: 24px;
+    background-color: transparent;
+    margin: 24px auto;
+}
