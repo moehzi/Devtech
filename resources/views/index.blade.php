@@ -23,10 +23,11 @@
 			<td>{{ $item->jabatan }}</td>
 			<td>{{ $item->alamat }}</td>
 			<td>
-				<a href="{{ url('edit-member',$item->id) }}"><img src="{{ asset('assets/img/edit.svg') }}" alt=""></a>    <a href="#"><img src="{{ asset('assets/img/delete.svg') }}" alt=""></a>		
+				<a href="{{ url('edit-member',$item->id) }}"><img src="{{ asset('assets/img/edit.svg') }}" alt=""></a>    <a href="{{ url('delete-member',$item->id) }}"><img src="{{ asset('assets/img/delete.svg') }}" alt=""></a>		
 			</td>
 		</tr>
 		@endforeach
 	</table>
 </div>
+
 @endsection

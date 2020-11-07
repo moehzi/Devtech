@@ -94,6 +94,8 @@ class MembersController extends Controller
 	 */
 	public function destroy($id)
 	{
-		//
+		$peg = Members::findOrFail($id);
+		$peg->delete();
+		return back();
 	}
 }
