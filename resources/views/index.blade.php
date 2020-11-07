@@ -22,7 +22,9 @@
 			<td>{{ $item->ttl }}</td>
 			<td>{{ $item->jabatan }}</td>
 			<td>{{ $item->alamat }}</td>
-			<td></td>
+			<td>
+				<a href="{{ url('edit-member',$item->id) }}"><img src="{{ asset('assets/img/edit.svg') }}" alt=""></a>    <a href="#"><img src="{{ asset('assets/img/delete.svg') }}" alt=""></a>		
+			</td>
 		</tr>
 		@endforeach
 	</table>

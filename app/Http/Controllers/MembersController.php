@@ -68,7 +68,8 @@ class MembersController extends Controller
 	 */
 	public function edit($id)
 	{
-		//
+		$peg = Members::findOrFail($id);
+		return view('edit-member', compact('peg'));
 	}
 
 	/**
@@ -80,7 +81,9 @@ class MembersController extends Controller
 	 */
 	public function update(Request $request, $id)
 	{
-		//
+		$peg = Members::findOrFail($id);
+		$peg->update($request->all());
+		return redirect('/');
 	}
 
 	/**
