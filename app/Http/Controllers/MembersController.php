@@ -46,7 +46,7 @@ class MembersController extends Controller
 			'jabatan' => $request->jabatan,
 			'alamat' => $request->alamat
 		]);
-		return redirect('/');
+		return redirect('/')->with('toast_success', 'Data berhasil ditambahkan.');
 	}
 
 	/**
@@ -83,7 +83,7 @@ class MembersController extends Controller
 	{
 		$peg = Members::findOrFail($id);
 		$peg->update($request->all());
-		return redirect('/');
+		return redirect('/')->with('toast_success', 'Data berhasil diubah.');;
 	}
 
 	/**
@@ -96,6 +96,6 @@ class MembersController extends Controller
 	{
 		$peg = Members::findOrFail($id);
 		$peg->delete();
-		return back();
+		return back()->with('info', 'Data telah dihapus.');;
 	}
 }
