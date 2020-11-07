@@ -17,4 +17,9 @@ class LoginController extends Controller
 		}
 		return redirect('login')->with('warning', 'Email/Password Salah');
 	}
+	public function logout(Request $request)
+	{
+		Auth::logout();
+		return redirect('login');
+	}
 }

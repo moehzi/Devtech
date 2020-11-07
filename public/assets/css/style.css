@@ -51,8 +51,15 @@
 }
 
 .homepage img,
-.members img {
+.members img,
+.logout img {
     background-color: #ffffff;
+    margin-right: 8px;
+}
+
+.logout img {
+    height: 30px;
+    width: 30px;
     margin-right: 8px;
 }
 
@@ -62,11 +69,26 @@
     background-color: #ffffff;
 }
 
+.logout a {
+
+    text-decoration: none;
+    color: black;
+    background-color: #ffffff;
+
+}
+
 .members {
     display: flex;
     align-items: center;
     background-color: #ffffff;
     margin: 0px 18px
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 18px 18px
 }
 
 a.active {

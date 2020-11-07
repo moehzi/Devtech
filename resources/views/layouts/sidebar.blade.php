@@ -8,4 +8,8 @@
 			<img src="{{ asset('assets/img/community.svg') }}" alt="">
 			<a class="{{ request()->is('member') ? 'active' : '' }}" href="member">Members</a>
 	</div>
+	<div class="logout">
+		<img src="{{ asset('assets/img/logout.svg') }}" alt="">
+		<a  href="{{ route('logout') }}">Logout</a>
+</div>
 </div>

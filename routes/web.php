@@ -16,3 +16,5 @@ Route::get('login', function () {
 	return view('login');
 });
 Route::post('postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
+
+Route::get('logout', [LoginController::class, 'logout'])->name('logout');
