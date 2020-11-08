@@ -15,10 +15,18 @@
 				<div class="form-group">
 				<label for="username">Username</label>
 				<input type="text" name="email">
+				<label class="text-error"> @error('email'){{ 
+					$message }}
+					
+				@enderror</label>
 			</div>
 				<div class="form-group">
 					<label for="username">Password</label>
 					<input type="password" name="password">
+					<label class="text-error"> @error('password'){{ 
+						$message }}
+						
+					@enderror</label>
 			</div>
 			<button class="btn-primary">
 				Log in

@@ -268,3 +268,7 @@ td {
     background-color: transparent;
     margin: 24px auto;
 }
+
+.text-error {
+    color: red;
+}
